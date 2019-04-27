@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "860273605463",
+    "firebase_url": "https://filmireview-mvp.firebaseio.com",
+    "project_id": "filmireview-mvp",
+    "storage_bucket": "filmireview-mvp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860273605463:android:e62c837e39e062f9",
+        "android_client_info": {
+          "package_name": "com.intact.filmireview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860273605463-tlvuept41v4h058a2saa4h5vp028qdgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU77qAodrsHIlhjQNjSIjMePuq5deyT-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860273605463-tlvuept41v4h058a2saa4h5vp028qdgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
