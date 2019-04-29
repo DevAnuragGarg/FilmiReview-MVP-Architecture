@@ -1,4 +1,4 @@
-package com.intact.filmireview.ui.home
+package com.intact.filmireview.ui.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -11,23 +11,29 @@ import androidx.recyclerview.widget.RecyclerView
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.intact.filmireview.R
-import com.intact.filmireview.ui.model.MovieDTO
+import com.intact.filmireview.data.model.MovieDTO
 import com.intact.filmireview.ui.movieDetail.MovieDetailActivity
 import com.intact.filmireview.util.IMAGE_BASE_URL_500
 import com.intact.filmireview.util.MOVIE_ID
 import com.squareup.picasso.Picasso
 import javax.inject.Inject
 
-class BaseMoviesAdapter @Inject constructor(
+class MoviesListAdapter @Inject constructor(
     private val context: Context,
     private val picasso: Picasso
 ) :
-    RecyclerView.Adapter<BaseMoviesAdapter.MovieViewHolder>() {
+    RecyclerView.Adapter<MoviesListAdapter.MovieViewHolder>() {
 
     private var moviesData = ArrayList<MovieDTO>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        MovieViewHolder(LayoutInflater.from(context).inflate(R.layout.item_movie, parent, false))
+        MovieViewHolder(
+            LayoutInflater.from(context).inflate(
+                R.layout.item_movie,
+                parent,
+                false
+            )
+        )
 
     override fun getItemCount() = moviesData.size
 

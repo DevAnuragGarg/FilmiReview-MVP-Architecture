@@ -11,7 +11,7 @@ import butterknife.ButterKnife
 import butterknife.Unbinder
 import com.intact.filmireview.R
 import com.intact.filmireview.ui.base.BaseFragment
-import com.intact.filmireview.ui.model.MovieDetailDTO
+import com.intact.filmireview.data.model.MovieDetailDTO
 import com.intact.filmireview.util.IMAGE_BASE_URL_ORIGINAL
 import com.intact.filmireview.util.MOVIE_ID
 import com.squareup.picasso.Picasso

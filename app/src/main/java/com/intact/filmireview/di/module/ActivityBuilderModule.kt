@@ -20,7 +20,7 @@ import dagger.android.ContributesAndroidInjector
 abstract class ActivityBuilderModule {
 
     @ActivityScope
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [HomeActivityModule::class])
     abstract fun contributeHomeActivity(): HomeActivity
 
     @ActivityScope
